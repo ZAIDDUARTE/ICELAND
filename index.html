@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<style>
+    #hero-section {
+        background-image: url('/serey-morm-z9g2cm3n080-unsplash-2.jpg');
+        background-size: cover;
+        padding-bottom: 50px;
+        background-position: fixed;
+    }
+    #hero-2 {
+        background-image: url('/SD0039.jpg');
+        background-size: cover;
+        padding-bottom: 150px;
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+
+footer a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #dcf2ff;
+    text-decoration: none;
+}
+
+.nav-link {
+    position: relative;
+    display: inline-block;
+    color: black;
+    text-decoration: none;
+    overflow: hidden;
+    transition: color 0.4s ease-in-out;
+}
+
+.nav-link::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(120deg, transparent, rgba(0, 0, 255, 0.5), transparent);
+    transform: translateX(-100%);
+    transition: transform 0.4s ease-in-out;
+}
+
+.nav-link:hover {
+    color: darkblue;
+}
+
+.nav-link:hover::before {
+    transform: translateX(100%);
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(120deg, transparent, rgba(0, 0, 139, 0.5), transparent);
+    transform: translateX(-100%);
+    transition: transform 0.6s ease-in-out;
+    animation: wave 0.8s ease-in-out infinite;
+    opacity: 0;
+}
+
+.nav-link:hover::after {
+    transform: translateX(100%);
+    opacity: 1;
+}
+
+@keyframes wave {
+    0% {
+        transform: translateX(-100%);
+    }
+    50% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+
+</style>
+<body style="overflow-x: hidden; background-color: #FFFAFA;">
+    
+    <!-- 1st section -->
+    <section>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-8 bg-primary px-5 py-3 fw-bold text-light">We Are Open Now</div>
+            <div style="cursor: pointer;" class="col-md-4 bg-warning px-5 py-3 fw-bold text-light">Call Us At +923109536338</div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Navbar -->
+<section id="hero-section">
+<nav class="navbar navbar-expand-lg bg-light ">
+    <div class="container-fluid ">
+      <a style="font-family: poppins;" class="navbar-brand fw-bold mx-5 fs-2" href="#">ICE LAND</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse d-flex justify-content-around" id="navbarNavAltMarkup">
+        <div class="navbar-nav ">
+          <a class="nav-link active mx-5 px-5 fw-bold" aria-current="page" href="#">Home</a>
+          <a class="nav-link mx-5 px-5 fw-bold fw-bold" href="#">Features</a>
+          <a class="nav-link mx-5 px-5 fw-bold" href="#">Pricing</a>
+          <a class="nav-link mx-5 px-5 fw-bold" href="#">Products</a>
+          <a class="nav-link mx-5 px-5 fw-bold" href="#">FAQs</a>    
+        </div>
+      </div>
+    </div>
+  </nav>
+
+<!-- Hero section -->
+ 
+    <div class="container py-5">
+        <div class="row my-5 py-5">
+            <center><h1 class="my-5 text-light fw-bold" style="font-family: babins;">WELCOME TO ICE LAND</h1>
+            <p class="text-light" style="font-family: Arsenal SC;"><strong>Calirfonia, USA</strong></p></center>
+        </div>
+    </div>
+ </section>
+
+
+ <section>
+    <div class="container ">
+        <div class="row ">
+            <div class="col d-flex justify-content-center my-5"><div class="card shadow bg-white text-center" style="width: 22rem;">
+  <img style="height: 250px; width: 350px;" src="/BN-US262_ICEBOO_12S_20170816185401.jpg" class="card-img-top" alt="...">
+  <div class="card-body py-3">
+    <h2 style="color: gray; font-family: babbins;"  class="card-title fw-bold">Safety First!</h2>
+    <p style="color: gray;" class="card-text lh-lg">Be sure to be fully hydrated before getting on the park and being exposed to a full hour in the hot sun. Most of the problems we see with participants are directly due to being in the hot sun without being properly hydrated. So please drink plenty of water prior to getting on the park.</p>
+    <a href="#" class="btn btn-lg rounded-0 border border-2 border-info btn-info btn-shadow btn-outline-light my-3">Go somewhere</a>
+  </div>
+</div></div>
+            <div class="col d-flex justify-content-center my-5"><div class="card shadow bg-white text-center" style="width: 22rem;">
+  <img style="height: 250px; width: 350px;" src="/cover-issue-7-by-joana-fontinha.jpg" class="card-img-top" alt="...">
+  <div class="card-body py-3">
+    <h2  style="color: gray; font-family: babbins;"  class="card-title fw-bold ">Get Tickets</h2>
+    <p style="color: gray;" class="card-text lh-lg">Be sure to be fully hydrated before getting on the park and being exposed to a full hour in the hot sun. Most of the problems we see with participants are directly due to being in the hot sun without being properly hydrated. So please drink plenty of water prior to getting on the park.</p>
+    <a href="#" class="btn btn-lg rounded-0 border border-2 border-info btn-info btn-shadow btn-outline-light my-3">Go somewhere</a>
+  </div>
+</div></div>
+            <div class="col d-flex justify-content-center my-5 "><div class="card shadow bg-white text-center" style="width: 22rem;">
+  <img style="height: 250px; width: 350px;" src="/HL_DMEYER_ISLANDE_WIRED-HP.jpg" class="card-img-top" alt="...">
+  <div class="card-body py-3  ">
+    <h2 style="color: gray; font-family: babbins;"  class="card-title fw-bold">Media Gallery</h2>
+    <p style="color: gray;" class="card-text lh-lg">Be sure to be fully hydrated before getting on the park and being exposed to a full hour in the hot sun. Most of the problems we see with participants are directly due to being in the hot sun without being properly hydrated. So please drink plenty of water prior to getting on the park.</p>
+    <a href="#" class="btn btn-lg rounded-0 border border-2 border-info btn-info btn-shadow btn-outline-light my-3">Go somewhere</a>
+  </div>
+</div></div>
+        </div>
+    </div>
+ </section>
+
+ <section id="hero-2">
+    <div class="container">
+        <div class="row pt-5 mt-5">
+            <center>
+        <p style="font-family: poppins;" class="fs-3 text-white pt-5 mt-5 lh-lg"><strong>At France Park we are incredibly excited to introduce to Cass County and Logansport “Kingdom Splash Fest”, a brand-new Floating Water Park and Ninja Obstacle Course Housed On-Site, Here at France Park!! Guaranteeing Thrills and Laughter for the Whole Family, Guests Will Slip and Slide, Trying Not to Fall Off While they Test their Skills as They Play and Have Fun!</strong></p></center>
+        </div>
+    </div>
+ </section>
+
+ 
+ <section>
+    <div class="container my-5">
+        <div class="row d-flex justify-content-center">
+            <div class="col-10 text-center mt-5 mb-2">  
+                <h1>Family Fun</h1>
+            </div>
+            <div class="col-10 col-md-6">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-12 p-2">
+                        <img src="/HL_DMEYER_ISLANDE_WIRED-HP.jpg" class="img-fluid img-thumbnail shadow"  alt="image" />
+                    </div>
+                </div>
+                <div class="row d-flex justify-content-center">
+                    <div class="col-6 p-2">
+                        <img class="img-fluid img-thumbnail shadow" src="/BN-US262_ICEBOO_12S_20170816185401.jpg" alt="image" />
+                    </div>
+                    <div class="col-6 p-2">
+                        <img class="img-fluid img-thumbnail shadow" src="/SD0039.jpg" alt="image" />
+                    </div>                    
+                </div>
+            </div>
+            <div class="col-10 col-md-6 d-none d-md-inline-block">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-6 p-2">
+                        <img class="img-fluid img-thumbnail shadow" src="/BN-US262_ICEBOO_12S_20170816185401.jpg" alt="image" />
+                    </div>
+                    <div class="col-6 p-2">
+                        <img class="img-fluid img-thumbnail shadow" src="/BN-US262_ICEBOO_12S_20170816185401.jpg" alt="image" />
+                    </div>
+                </div>
+                <div class="row d-flex justify-content-center">
+                    <div class="col-12 p-2">
+                        <img src="/BN-US262_ICEBOO_12S_20170816185401.jpg" class="img-fluid img-thumbnail shadow"  alt="image" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+ <!-- Footer -->
+ <footer class="bg-dark text-light pt-5 pb-4">
+    <div class="container text-md-left">
+        <div class="row text-md-left">
+            <!-- About Section -->
+            <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                <h5 class="text-uppercase mb-4 font-weight-bold text-info">Iceland</h5>
+                <p>Discover the beauty of Iceland, from its majestic waterfalls to its serene glaciers. Experience the wonder and magic of this Nordic island nation.</p>
+            </div>
+
+            <!-- Navigation Links -->
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                <h5 class="text-uppercase mb-4 font-weight-bold text-info">Quick Links</h5>
+                <p><a href="#" class="text-light" style="text-decoration: none;">Home</a></p>
+                <p><a href="#" class="text-light" style="text-decoration: none;">About</a></p>
+                <p><a href="#" class="text-light" style="text-decoration: none;">Services</a></p>
+                <p><a href="#" class="text-light" style="text-decoration: none;">Contact</a></p>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                <h5 class="text-uppercase mb-4 font-weight-bold text-info">Contact</h5>
+                <p><i class="fas fa-home mr-3"></i> Reykjavik, Iceland</p>
+                <p><i class="fas fa-envelope mr-3"></i> info@iceland.com</p>
+                <p><i class="fas fa-phone mr-3"></i> +354 123 4567</p>
+                <p><i class="fas fa-print mr-3"></i> +354 123 4568</p>
+            </div>
+
+            <!-- Social Media Links -->
+            <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                <h5 class="text-uppercase mb-4 font-weight-bold text-info">Follow Us</h5>
+                <div>
+                    <a href="#"><i class="fab fa-facebook-f text-light mr-4 mx-3"></i></a>
+                    <a href="#"><i class="fab fa-twitter text-light mr-4 mx-3"></i></a>
+                    <a href="#"><i class="fab fa-instagram text-light mr-4 mx-3"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in text-light mr-4 mx-3"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="row d-flex justify-content-center mt-4">
+            <div class="col-md-7 col-lg-8">
+                <p class="text-center text-light">© 2024 Iceland.com. All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
