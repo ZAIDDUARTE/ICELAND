@@ -10,9 +10,9 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 
-<body   class="bg-white text-gray-800 font-sans">
-    <div  class="container mx-auto px-4">
-        <div  class="flex flex-col min-h-screen">
+<body class="bg-white text-gray-800 font-sans">
+    <div class="container mx-auto px-4">
+        <div class="flex flex-col min-h-screen">
             <!-- Header -->
             <header class="flex items-center justify-between p-4 border-b border-gray-200">
                 <div class="flex items-center">
@@ -29,9 +29,9 @@
             </header>
 
             <!-- Main Content -->
-            <div  class="flex flex-1">
+            <div class="flex flex-1 flex-col md:flex-row">
                 <!-- Sidebar -->
-                <aside class="w-64 p-4 border-r border-gray-200">
+                <aside class="w-full md:w-64 p-4 border-r border-gray-200 md:h-auto">
                     <nav class="space-y-2">
                         <div class="flex items-center space-x-2">
                             <img alt="User Avatar" class="h-20 w-20 rounded-full" height="80" src="https://storage.googleapis.com/a1aa/image/wYBmzC0Qk2o4HBOkcX2fvKeyehhdmqFp3oF7reGxF7CMA2dOB.jpg" width="80" />
@@ -63,41 +63,40 @@
                     </nav>
                 </aside>
 
-              <!-- Main Section -->
-<main class="flex-1 p-8">
-    <div class="flex items-center justify-between">
-        <h1 class="text-2xl font-semibold">Freelancer / Edit Profile /
-            <span class="text-black"> Specialization</span>
-        </h1>
-        <button class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 transition duration-200">
-            View Public Profile
-        </button>
-    </div>
-    <p class="mt-2 text-gray-500">Add some basic information about yourself.</p>
-    <div class="mt-4 flex items-center">
-        <div class="w-1/6 bg-green-500 h-2 rounded"></div>
-        <div class="w-5/6 bg-gray-200 h-2 rounded ml-2"></div>
-        <span class="ml-2 text-gray-500">12%</span>
-    </div>
-    <div style="height: 850px;" class="mt-8 flex flex-col justify-between h-full">
-        <div>
-            <h2 class="text-xl font-semibold">Specializations</h2>
-            <p class="mt-2 text-gray-500">Specializations allow employers to find you easier. You can add up to 5 specializations.</p>
-        </div>
-        <div class="flex flex-col items-center justify-center flex-grow" style="min-height: 60px;"> <!-- Adjusted height -->
-            <p class="mt-2 text-gray-500 text-center">You have no specializations</p>
-        </div>
-        <div class="flex justify-between mt-4">
-            <button class="mt-4 bg-gray-200 text-gray-700 px-4 py-2 rounded hover:bg-gray-300 transition duration-200">
-                Add specializations
-            </button>
-            <button class="mt-4 bg-green-500 text-white px-6 py-2 rounded hover:bg-green-600 transition duration-200">
-                Next
-            </button>
-        </div>
-    </div>
-</main>
-
+                <!-- Main Section -->
+                <main class="flex-1 p-4 md:p-8">
+                    <div class="flex items-center justify-between">
+                        <h1 class="text-2xl font-semibold">Freelancer / Edit Profile /
+                            <span class="text-black"> Specialization</span>
+                        </h1>
+                        <button class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 transition duration-200">
+                            View Public Profile
+                        </button>
+                    </div>
+                    <p class="mt-2 text-gray-500">Add some basic information about yourself.</p>
+                    <div class="mt-4 flex items-center">
+                        <div class="w-1/6 bg-green-500 h-2 rounded"></div>
+                        <div class="w-5/6 bg-gray-200 h-2 rounded ml-2"></div>
+                        <span class="ml-2 text-gray-500">12%</span>
+                    </div>
+                    <div style="height: 850px;" class="mt-8 flex flex-col justify-between h-full">
+                        <div>
+                            <h2 class="text-xl font-semibold">Specializations</h2>
+                            <p class="mt-2 text-gray-500">Specializations allow employers to find you easier. You can add up to 5 specializations.</p>
+                        </div>
+                        <div class="flex flex-col items-center justify-center flex-grow" style="min-height: 60px;">
+                            <p class="mt-2 text-gray-500 text-center">You have no specializations</p>
+                        </div>
+                        <div class="flex flex-col md:flex-row justify-between mt-4">
+                            <button class="mt-4 md:mt-0 bg-gray-200 text-gray-700 px-4 py-2 rounded hover:bg-gray-300 transition duration-200">
+                                Add specializations
+                            </button>
+                            <button class="mt-4 md:mt-0 bg-green-500 text-white px-6 py-2 rounded hover:bg-green-600 transition duration-200">
+                                Next
+                            </button>
+                        </div>
+                    </div>
+                </main>
             </div>
         </div>
     </div>
