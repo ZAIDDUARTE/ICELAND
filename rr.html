@@ -1,110 +1,648 @@
-<!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Freelancer Profile</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Grillaire</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href='https://fonts.googleapis.com/css?family=Dancing Script' rel='stylesheet'>
+
+ <style>
+    body{
+        font-family: oswald;
+        background-image: url('https://grillaire.onlywebcoding.com.ua/images/bg-food-dark.png');
+        color: white;
+    }
+ </style>
+       
 </head>
+<body >
 
-<body class="bg-white text-gray-800 font-sans">
-    <div class="container mx-auto px-4">
-        <div class="flex flex-col min-h-screen">
-            <!-- Header -->
-            <header class="flex items-center justify-between p-4 border-b border-gray-200">
-                <div class="flex items-center">
-                    <button class="text-gray-500 mr-4 hover:text-green-500 transition duration-200">
-                        <i class="fas fa-arrow-left"></i>
-                    </button>
-                    <img alt="C9Freelancer Logo" class="h-10" height="40" src="https://storage.googleapis.com/a1aa/image/xafHeONpC0i1rUeHxnoi60QhgRd2joEYKCj9y1bhnW1CA7OnA.jpg" width="40" />
-                    <span class="ml-2 text-xl font-semibold">C9Freelancer</span>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-transparent px-3" style="position: relative; z-index: 2;">
+    <div class="container d-flex justify-content-between">
+        <a class="navbar-brand text-white" href="#" style="font-size: 34px; font-weight: bold;">
+            <img src="https://static.wixstatic.com/media/e9879a_61700ab51ec9452eac95ed56e753da66~mv2.jpg/v1/fill/w_293,h_248,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/e9879a_61700ab51ec9452eac95ed56e753da66~mv2.jpg" 
+                 alt="Brand Logo" style="height: 150px; width: 180px;">
+        </a>
+        
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav me-3 fs-5 pt-3 mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link  text-white" href="#">HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#About">ABOUT US</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#Menu">MENU</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#Gallery">GALLERY</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#Contact">CONTACTS</a>
+                </li>
+            </ul>
+            <a href="#Reservation" class="btn btn-warning fw-bold mt-3 px-4 py-2">BOOK A TABLE</a>
+        </div>
+    </div>
+</nav>
+
+<!-- Custom styles for hover effect -->
+<style>
+    /* Change link color on hover */
+    .navbar-nav .nav-link:hover {
+        color: #ffc107 !important; /* Yellow color on hover */
+    }
+
+    /* Change button text color on hover */
+    .btn-warning:hover {
+        color: white; /* Change text to white on hover */
+    }
+</style>
+
+<!-- Hero Section -->
+<section class="hero-section d-flex justify-content-start align-items-center text-white" style="background: url('https://grillaire.onlywebcoding.com.ua/images/bg-header.png') no-repeat center center/cover; height: 800px; margin-top: -180px;">
+    <div class="container text-start">
+        <h1 class="display-1 fw-bold">PA​TCHES PUB
+& GRILL
+</h1>
+        <h2 class="display-4 fw-md">Bringing smiles to peoples face's</h2>
+    </div>
+</section>
+
+<!-- Features Section -->
+<section class="features py-4">
+    <div class="container" style="margin-top: -126px;">
+        <div class="row text-center">
+            <div class="col-md-3 mb-3">
+                <div class="feature-box bg-warning p-5 text-dark">
+                    <i class="fas fa-music fa-4x mb-2"></i>
+                    <h3 class="h6 fw-bold">Live Local Music</h3>
                 </div>
-                <div class="flex items-center">
-                    <img alt="User Avatar" class="h-10 w-10 rounded-full" height="40" src="https://storage.googleapis.com/a1aa/image/wYBmzC0Qk2o4HBOkcX2fvKeyehhdmqFp3oF7reGxF7CMA2dOB.jpg" width="40" />
-                    <i class="fas fa-briefcase ml-4 text-gray-500 hover:text-green-500 transition duration-200"></i>
+            </div>
+            <div class="col-md-3 mb-3">
+                <div class="feature-box bg-warning p-5 text-dark">
+                    <i class="fas fa-award fa-4x mb-2"></i>
+                    <h3 class="h6 fw-bold">Award Winning Food</h3>
                 </div>
-            </header>
-
-            <!-- Main Content -->
-            <div class="flex flex-1 flex-col md:flex-row">
-                <!-- Sidebar -->
-                <aside class="w-full md:w-64 p-4 border-r border-gray-200 md:h-auto">
-                    <nav class="space-y-2">
-                        <div class="flex items-center space-x-2">
-                            <img alt="User Avatar" class="h-20 w-20 rounded-full" height="80" src="https://storage.googleapis.com/a1aa/image/wYBmzC0Qk2o4HBOkcX2fvKeyehhdmqFp3oF7reGxF7CMA2dOB.jpg" width="80" />
-                            <div>
-                                <h2 class="text-lg font-semibold">Freelancer</h2>
-                                <p class="text-sm text-gray-500">Edit Profile</p>
-                            </div>
-                        </div>
-                        <ul class="mt-4 space-y-2">
-                            <li class="text-green-500 hover:text-green-600 cursor-pointer transition duration-200">Overview</li>
-                            <li class="text-green-500 hover:text-green-600 cursor-pointer transition duration-200">Specialization</li>
-                            <li class="hover:text-gray-600 cursor-pointer transition duration-200">Other Skills</li>
-                            <li class="hover:text-gray-600 cursor-pointer transition duration-200">Salary</li>
-                            <li class="hover:text-gray-600 cursor-pointer transition duration-200">Employment</li>
-                            <li class="hover:text-gray-600 cursor-pointer transition duration-200">Education</li>
-                            <li class="hover:text-gray-600 cursor-pointer transition duration-200">Certifications</li>
-                            <li class="hover:text-gray-600 cursor-pointer transition duration-200">Language</li>
-                            <li class="hover:text-gray-600 cursor-pointer transition duration-200">Address Book</li>
-                            <li class="hover:text-gray-600 cursor-pointer transition duration-200">Time Zones</li>
-                        </ul>
-                        <ul class="mt-4 space-y-2">
-                            <li class="hover:text-gray-600 cursor-pointer transition duration-200">Portfolio</li>
-                            <li class="hover:text-gray-600 cursor-pointer transition duration-200">Availability</li>
-                            <li class="hover:text-gray-600 cursor-pointer transition duration-200">Badges</li>
-                            <li class="hover:text-gray-600 cursor-pointer transition duration-200">Social Media</li>
-                            <li class="hover:text-gray-600 cursor-pointer transition duration-200">Email Notification</li>
-                            <li class="hover:text-gray-600 cursor-pointer transition duration-200">Password</li>
-                        </ul>
-                    </nav>
-                </aside>
-
-                <!-- Main Section -->
-                <main class="flex-1 p-4 md:p-8">
-                    <div class="flex items-center justify-between">
-                        <h1 class="text-2xl font-semibold">Freelancer / Edit Profile /
-                            <span class="text-black"> Specialization</span>
-                        </h1>
-                        <button class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 transition duration-200">
-                            View Public Profile
-                        </button>
-                    </div>
-                    <p class="mt-2 text-gray-500">Add some basic information about yourself.</p>
-                    <div class="mt-4 flex items-center">
-                        <div class="w-1/6 bg-green-500 h-2 rounded"></div>
-                        <div class="w-5/6 bg-gray-200 h-2 rounded ml-2"></div>
-                        <span class="ml-2 text-gray-500">12%</span>
-                    </div>
-                    <div style="height: 850px;" class="mt-8 flex flex-col justify-between h-full">
-                        <div>
-                            <h2 class="text-xl font-semibold">Specializations</h2>
-                            <p class="mt-2 text-gray-500">Specializations allow employers to find you easier. You can add up to 5 specializations.</p>
-                        </div>
-                        <div class="flex flex-col items-center justify-center flex-grow" style="min-height: 60px;">
-                            <p class="mt-2 text-gray-500 text-center">You have no specializations</p>
-                        </div>
-                        <div class="flex flex-col md:flex-row justify-between mt-4">
-                            <button class="mt-4 md:mt-0 bg-gray-200 text-gray-700 px-4 py-2 rounded hover:bg-gray-300 transition duration-200">
-                                Add specializations
-                            </button>
-                            <button class="mt-4 md:mt-0 bg-green-500 text-white px-6 py-2 rounded hover:bg-green-600 transition duration-200">
-                                Next
-                            </button>
-                        </div>
-                    </div>
-                </main>
+            </div>
+            <div class="col-md-3 mb-3">
+                <div class="feature-box bg-warning p-5 text-dark">
+                    <i class="fas fa-glass-cheers fa-4x mb-2"></i>
+                    <h3 class="h6 fw-bold">Party @ Patches</h3>
+                </div>
+            </div>
+            <div class="col-md-3 mb-3">
+                <div class="feature-box bg-warning p-5 text-dark">
+                    <i class="fas fa-cocktail fa-4x mb-2"></i>
+                    <h3 class="h6 fw-bold">Best Happy Hour</h3>
+                </div>
             </div>
         </div>
     </div>
+</section>
 
-    <!-- Bootstrap JS (Optional for Bootstrap components) -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+
+
+
+ <!-- About Section -->
+<div id="About" class="container py-5">
+    <div class="row">
+        <div class="col-md-6">
+            <p class="section-title text-warning" style="font-family: 'Dancing Script', DancingScript; font-size: 24px;">
+                Few words about us ----
+            </p>
+            <h1 class="about-title display-4 fw-bold">
+                ABOUT US
+            </h1>
+            <p class="about-text mb-4">
+                At Patches Pub & Grill, we are all about creating an unforgettable experience for our customers. From our award-winning burgers to our lively atmosphere, we strive to make every visit special. Proudly voted Best Sports Bar, Best Wings, and Best Burgers from 2016 to 2023 by PC Living Magazine, we continue to set the standard for quality and service.
+            </p>
+            <p class="about-text mb-4">
+                Whether you’re here to enjoy live local music, our award-winning food, or just want to catch a game with friends, Patches Pub & Grill offers the perfect place to relax, unwind, and indulge in great food. Our menu boasts signature dishes like juicy burgers with sides including french fries, sweet potato fries, mac & cheese, and more!
+            </p>
+            <p class="about-text mb-4">
+                Join us and discover why we've been voted Best of Bay from 2016 through 2023. Our friendly staff, delicious meals, and lively atmosphere will keep you coming back for more.
+            </p>
+            <p class="signature" style="font-family: 'Dancing script', cursive; font-size: 36px;">
+                PA​TCHES PUB
+& GRILL
+
+            </p>
+            <div class="d-flex mt-4">
+                <div class="me-4 text-center">
+                    <p class="stats display-4 fw-bold text-warning">150+</p>
+                    <p class="stats-desc text-white">VISITORS DAILY</p>
+                </div>
+                <div class="me-4 text-center">
+                    <p class="stats display-4 fw-bold text-warning">100%</p>
+                    <p class="stats-desc text-white">POSITIVE FEEDBACK</p>
+                </div>
+                <div class="text-center">
+                    <p class="stats display-4 fw-bold text-warning">25+</p>
+                    <p class="stats-desc text-white">AWARDS</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 image-container position-relative ">
+            <img alt="Chef standing in the kitchen, smiling" 
+            class="chef-image img-fluid position-absolute top-50 start-50 translate-middle border border-warning rounded p-2 d-none d-md-block" 
+            src="https://static.wixstatic.com/media/e9879a_c20c1f561c6d4bf783f1c3823d2616a1~mv2.jpg/v1/fill/w_749,h_525,al_c,lg_1,q_85,enc_auto/e9879a_c20c1f561c6d4bf783f1c3823d2616a1~mv2.jpg"/>
+       
+        </div>
+    </div>
+</div>
+
+
+<!-- Events & Ongoings Section -->
+<div class="container py-5 d-none d-md-block">
+    <div class="header text-start ">
+        <p class="text-warning" style="font-size: 2.2rem; font-family: 'Dancing script', cursive;">
+            Events & Ongoings ----
+        </p>
+        <h1 class="display-4 fw-bold">
+            EVENTS & ONGOINGS
+        </h1>
+    </div>
+    <div class="content py-4">
+        <div class="d-flex justify-content-center gap-4"> <!-- Increased gap to 4 -->
+            <img src="https://static.wixstatic.com/media/e9879a_f9283f5d163141588fbaf0a2b25b16bd.jpg/v1/fill/w_440,h_232,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/e9879a_f9283f5d163141588fbaf0a2b25b16bd.jpg" alt="Event 1" class="img-fluid mx-2" style="width: 300px; height: auto; object-fit: cover; border: 2px solid #f39c12; border-radius: 5px;"> <!-- Added border -->
+            <img src="https://static.wixstatic.com/media/e9879a_4a6e9ac1598d4b599158e99d930e5ac0~mv2_d_4215_3372_s_4_2.jpg/v1/fill/w_337,h_269,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/e9879a_4a6e9ac1598d4b599158e99d930e5ac0~mv2_d_4215_3372_s_4_2.jpg" alt="Event 2" class="img-fluid mx-2" style="width: 300px; height: auto; object-fit: cover; border: 2px solid #f39c12; border-radius: 5px;"> <!-- Added border -->
+            <img src="https://static.wixstatic.com/media/e9879a_ab2df99039234ad28292f3b9c11b87bf~mv2.jpg/v1/fill/w_508,h_676,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/e9879a_ab2df99039234ad28292f3b9c11b87bf~mv2.jpg" alt="Event 3" class="img-fluid mx-2" style="width: 300px; height: auto; object-fit: cover; border: 2px solid #f39c12; border-radius: 5px;"> <!-- Added border -->
+            <img src="https://static.wixstatic.com/media/e9879a_c415ad870ea04be7a1387cbdfc2394ee~mv2.jpg/v1/fill/w_737,h_553,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/e9879a_c415ad870ea04be7a1387cbdfc2394ee~mv2.jpg" alt="Event 4" class="img-fluid mx-2" style="width: 300px; height: auto; object-fit: cover; border: 2px solid #f39c12; border-radius: 5px;"> <!-- Added border -->
+        </div>
+    </div>
+</div>
+
+
+
+
+<!-- Offer Section -->
+<div class="offer-section position-relative d-flex justify-content-center align-items-center text-center" style="background: url('/Untitled\ design\(3\).png') no-repeat center center; background-size: cover; height: 70vh; width: 100%;">
+    <div class="overlay position-absolute w-100 h-100" style="background: rgba(0, 0, 0, 0.85);"></div> <!-- Stronger overlay -->
+    <div class="offer-content text-white z-index-2 position-relative">
+        <p class="fs-2 m-0">Special Offer at Patches Pub</p>
+        <h2 class="display-3 fw-bold">HAPPY HOUR SPECIALS</h2>
+        <h2 class="display-3 fw-bold">25% OFF ALL DRINKS</h2>
+        <button class="btn btn-warning fw-bold mt-3 px-4 py-2">RESERVE A TABLE</button>
+    </div>
+</div>
+
+
+
+
+<!-- Menu-section -->
+<div id="Menu" class="container mt-5">
+    <div class="row">
+        <!-- Left Column for Menu Title -->
+        <div class="col-md-4 mb-5 pb-5 text-start">
+            <p style="font-family: dancing script;" class="text-warning h2 mb-0">Our Menu ---</p>
+            <p  class="h1 fw-bold">MENU</p>
+        </div>
+        
+        <!-- Right Column for Menu Buttons -->
+        <div class="col-md-8 text-center ">
+            <button class="btn btn-warning mx-2">STEAK</button>
+            <button class="btn btn-warning mx-2">RIBS</button>
+            <button class="btn btn-warning mx-2">SAUSAGE</button>
+            <button class="btn btn-warning mx-2">CHICKEN</button>
+            <button class="btn btn-warning mx-2">DESSERTS</button>
+            <button class="btn btn-warning mx-2">DRINKS</button>
+        </div>
+    </div>
+
+    <div class="row">
+        <!-- First column with 3 items -->
+        <div class="col-md-6">
+            <div class="d-flex align-items-start mb-4">
+                <img src="https://static.wixstatic.com/media/e9879a_8baaf627b7374e648cba37df8e7fb7c6.png/v1/fill/w_236,h_213,al_c,q_85,enc_auto/untitled.png" alt="Award Winning Wings" class="img-fluid rounded" style="width: 100px; height: 100px; object-fit: cover;"/>
+                <div class="ms-3">
+                    <h5 class="mb-1">Award Winning Wings</h5>
+                    <p class="mb-1 text-white">Deliciously crafted wings that are sure to satisfy your cravings.</p>
+                    <p class="text-warning mb-1" style="font-family: dancing script;">
+                        all wing orders are served with ranch   or bleu cheese dressing & celery
+
+                    </p>
+                    <hr class="text-white my-2">
+                    <p class="fw-bold text-end">$8.99 - $35.99</p>
+                </div>
+            </div>
+            
+          
+            
+            <div class="d-flex align-items-start mb-4">
+                <img src="https://static.wixstatic.com/media/e9879a_f3ecdc01e36e4bd79e6e809e9ecc83a8.jpg/v1/fill/w_253,h_253,al_c,lg_1,q_80,enc_auto/flatbread.jpg" alt="Grilled Buffalo Wings" class="img-fluid rounded" style="width: 100px; height: 100px; object-fit: cover;"/>
+                <div class="ms-3">
+                    <h5 class="mb-1">Appetizers</h5>
+                    <p class="mb-1 text-white">Chips & Queso</p>
+                    <p class="text-warning mb-1" style="font-family: dancing script;">
+                        Fresh Flash Fried Tortilla Chips Served W/ Queso & Salsa
+                    </p>
+                    <hr class="text-white my-2">
+                    <p class="fw-bold text-end">$8.99</p>
+                </div>
+            </div>
+            
+         
+        </div>
+
+        <!-- Second column with 3 items -->
+        <div class="col-md-6">
+            <div class="d-flex align-items-start mb-4">
+                <img src="/Firefox_Screenshot_2024-10-17T15-09-51.798Z.png" alt="Beef & Sausage Kebabs" class="img-fluid rounded" style="width: 100px; height: 100px; object-fit: cover;"/>
+                <div class="ms-3">
+                    <h5 class="mb-1">AWARD WINNING PIZZAS</h5>
+                    <p class="mb-1  text-white">Thin pizza crust topped with our delicious pizza sauce & special house blend cheese</p>
+                    <p class="text-warning mb-1" style="font-family: dancing script;">Fresh sausage, beef tri-tip, red wine vinegar, paprika, tomato, onion, cilantro</p>
+                    <hr class="text-white my-2">
+                    <p class="fw-bold text-end">$20.15</p>
+                </div>
+            </div>
+            <div class="d-flex align-items-start mb-4">
+                <img src="https://static.wixstatic.com/media/e9879a_acf3e89575d04e3dbf2de7eae388cf50.jpg/v1/crop/x_0,y_10,w_2592,h_1934/fill/w_276,h_207,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/DSCF3395_JPG.jpg" alt="Grilled Seafood Platter" class="img-fluid rounded" style="width: 100px; height: 100px; object-fit: cover;"/>
+                <div class="ms-3">
+                    <h5 class="mb-1">Double bacon egg & cheese burger</h5>
+                    <p class="mb-1  text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <p class="text-warning mb-1" style="font-family: dancing script;">Lobster tails, sea scallops, shrimp, smoked paprika, thyme, parsley, mint, capers, chili pepper</p>
+                    <hr class="text-white my-2">
+                    <p class="fw-bold text-end">$18.30</p>
+                </div>
+            </div>
+           
+        </div>
+    </div>
+</div>
+
+
+
+<div id="Reservation" class="container-fluid mx-auto p-5" style="background-image: url('https://grillaire.onlywebcoding.com.ua/images/bg-booking.png');">
+    <div class="text-start mb-5 ps-5 ms-5">
+        <h2 class="header-text ps-5 ms-4" style="font-family: 'dancing script', cursive; color: #ffc107;">Reservations</h2>
+        <h1 class="display-4 font-weight-bold ps-5 ms-4" style="font-family: 'oswald', cursive; ">BOOK A TABLE</h1>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="bg-transparent p-4 rounded">
+              
+                <div class="card bg-secondary p-4 rounded">
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <button class="btn btn-link text-light">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <h2 class="m-0">OCTOBER 2024</h2>
+                        <button class="btn btn-link text-light">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                    <table class="table table-dark table-bordered text-center calendar-table">
+                        <thead>
+                            <tr>
+                                <th>Su</th>
+                                <th>Mo</th>
+                                <th>Tu</th>
+                                <th>We</th>
+                                <th>Th</th>
+                                <th>Fr</th>
+                                <th>Sa</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>3</td>
+                                <td>4</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>6</td>
+                                <td>7</td>
+                                <td>8</td>
+                                <td>9</td>
+                                <td>10</td>
+                                <td>11</td>
+                            </tr>
+                            <tr>
+                                <td>12</td>
+                                <td>13</td>
+                                <td>14</td>
+                                <td>15</td>
+                                <td>16</td>
+                                <td class="border border-warning bg-warning">17</td>
+                                <td>18</td>
+                            </tr>
+                            <tr>
+                                <td>19</td>
+                                <td>20</td>
+                                <td>21</td>
+                                <td>22</td>
+                                <td>23</td>
+                                <td>24</td>
+                                <td>25</td>
+                            </tr>
+                            <tr>
+                                <td>26</td>
+                                <td>27</td>
+                                <td>28</td>
+                                <td>29</td>
+                                <td>30</td>
+                                <td>31</td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mt-5">
+            <select class="form-select bg-dark text-light border-warning mb-3">
+                <option>2 People</option>
+                <option>3 People</option>
+                <option>4 People</option>
+            </select>
+            <select class="form-select bg-dark text-light border-warning mb-3">
+                <option>6:00 am</option>
+                <option>7:00 am</option>
+                <option>8:00 am</option>
+            </select>
+            <input type="text" class="form-control bg-dark text-light border-warning mb-3" placeholder="Name">
+            <input type="text" class="form-control bg-dark text-light border-warning mb-3" placeholder="Phone">
+            <button class="btn btn-warning text-dark fw-bold w-100">RESERVATION</button>
+        </div>
+    </div>
+</div>
+<div class="position-fixed bottom-0 end-0 p-3">
+    <div class="bg-primary text-white rounded-circle d-flex justify-content-center align-items-center" style="width: 50px; height: 50px; cursor: pointer;">
+        <i class="fas fa-comment"></i>
+    </div>
+</div>
+
+
+<!-- Gallery Section -->
+<div id="Gallery" class="container my-5">
+    <div class="text-start mb-4">
+        <p class="text-warning mb-1 fs-3" style="font-family: 'dancing script', cursive; color: #ffc107;">Few words about us</p>
+        <h2 class="display-4 font-weight-bold fs-1 fw-bold">GALLERY</h2>
+    </div>
+    <div class="row">
+        <div class="col-md-4 mb-3 position-relative">
+            <div class="img-hover">
+                <img class="img-fluid rounded" alt="Image 1" 
+                     src="https://static.wixstatic.com/media/e9879a_7dce5d1886f54d8d819cfccca1383ec6~mv2_d_6000_4000_s_4_2.jpg/v1/fill/w_1325,h_883,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/e9879a_7dce5d1886f54d8d819cfccca1383ec6~mv2_d_6000_4000_s_4_2.jpg"
+                     style="height: 300px; width: 100%; object-fit: cover;"/>
+                <div class="overlay text-center d-flex justify-content-center align-items-center">
+                    <div>
+                        <p class="text-warning mb-1 fs-3" style="font-family: 'dancing script', cursive;">Few words about us</p>
+                        <h2 class="display-4 font-weight-bold fs-1 fw-bold">GALLERY</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-3 position-relative">
+            <div class="img-hover">
+                <img class="img-fluid rounded" alt="Image 2" 
+                     src="https://static.wixstatic.com/media/e9879a_8ad21bf5763849c7bf37f69bf8cf8647~mv2_d_2048_1536_s_2.jpg/v1/fill/w_1178,h_884,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/e9879a_8ad21bf5763849c7bf37f69bf8cf8647~mv2_d_2048_1536_s_2.jpg"
+                     style="height: 300px; width: 100%; object-fit: cover;"/>
+                <div class="overlay text-center d-flex justify-content-center align-items-center">
+                    <div>
+                        <p class="text-warning mb-1 fs-3" style="font-family: 'dancing script', cursive;">Few words about us</p>
+                        <h2 class="display-4 font-weight-bold fs-1 fw-bold">GALLERY</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-3 position-relative">
+            <div class="img-hover">
+                <img class="img-fluid rounded" alt="Image 3" 
+                     src="https://static.wixstatic.com/media/e9879a_a6e733bb12734fb19a03aa0086aa416d~mv2.jpg/v1/fill/w_960,h_720,al_c,q_85,enc_auto/e9879a_a6e733bb12734fb19a03aa0086aa416d~mv2.jpg"
+                     style="height: 300px; width: 100%; object-fit: cover;"/>
+                <div class="overlay text-center d-flex justify-content-center align-items-center">
+                    <div>
+                        <p class="text-warning mb-1 fs-3" style="font-family: 'dancing script', cursive;">Few words about us</p>
+                        <h2 class="display-4 font-weight-bold fs-1 fw-bold">GALLERY</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-3 position-relative">
+            <div class="img-hover">
+                <img class="img-fluid rounded" alt="Image 4" 
+                     src="https://static.wixstatic.com/media/e9879a_5fc4184214424ee19f380fe488c6c002~mv2.jpg/v1/fill/w_663,h_884,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/e9879a_5fc4184214424ee19f380fe488c6c002~mv2.jpg"
+                     style="height: 300px; width: 100%; object-fit: cover;"/>
+                <div class="overlay text-center d-flex justify-content-center align-items-center">
+                    <div>
+                        <p class="text-warning mb-1 fs-3" style="font-family: 'dancing script', cursive;">Few words about us</p>
+                        <h2 class="display-4 font-weight-bold fs-1 fw-bold">GALLERY</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-3 position-relative">
+            <div class="img-hover">
+                <img class="img-fluid rounded" alt="Image 5" 
+                     src="https://static.wixstatic.com/media/e9879a_dc8a9e4e844045c2831d92efd700a63f~mv2.jpg/v1/fill/w_663,h_884,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/e9879a_dc8a9e4e844045c2831d92efd700a63f~mv2.jpg"
+                     style="height: 300px; width: 100%; object-fit: cover;"/>
+                <div class="overlay text-center d-flex justify-content-center align-items-center">
+                    <div>
+                        <p class="text-warning mb-1 fs-3" style="font-family: 'dancing script', cursive;">Few words about us</p>
+                        <h2 class="display-4 font-weight-bold fs-1 fw-bold">GALLERY</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-3 position-relative">
+            <div class="img-hover">
+                <img class="img-fluid rounded" alt="Image 6" 
+                     src="https://static.wixstatic.com/media/e9879a_0163d4fa5b6d4d44914704df41da0b0e~mv2.jpg/v1/fill/w_960,h_720,al_c,q_85,enc_auto/e9879a_0163d4fa5b6d4d44914704df41da0b0e~mv2.jpg"
+                     style="height: 300px; width: 100%; object-fit: cover;"/>
+                <div class="overlay text-center d-flex justify-content-center align-items-center">
+                    <div>
+                        <p class="text-warning mb-1 fs-3" style="font-family: 'dancing script', cursive;">Few words about us</p>
+                        <h2 class="display-4 font-weight-bold fs-1 fw-bold">GALLERY</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Custom CSS for Overlay and Zoom Effect -->
+<style>
+    .img-hover {
+        position: relative;
+        overflow: hidden;
+        transition: transform 0.5s ease; /* Added transition for zoom */
+    }
+
+    .img-hover img {
+        transition: transform 0.5s ease; /* Smooth transition for zoom */
+    }
+
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.6);
+        color: #ffc107; /* Change text color as needed */
+        opacity: 0;
+        transition: opacity 0.5s ease;
+    }
+
+    .img-hover:hover .overlay {
+        opacity: 1;
+    }
+
+    .img-hover:hover img {
+        transform: scale(1.1); /* Zoom in effect */
+    }
+</style>
+
+
+  <!-- Testimonials Section -->
+<div class="container my-5">
+    <div class="text-start mb-5">
+        <h3 class="text-warning" style="font-family: 'dancing script', cursive;">Clients ----</h3>
+        <h2 class="display-4 fw-bold font-weight-bold">TESTIMONIALS</h2>
+    </div>
+    <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="row">
+                    <div class="col-md-4 mb-4">
+                        <div class="card text-center p-3 bg-dark text-light">
+                            <p>
+                                "Amazing bar food, prices, live music, service and atmosphere!"
+                            </p>
+                            <div class="d-flex align-items-center justify-content-center">
+                                <img class="rounded-circle" alt="Portrait of Brandi R" 
+                                     src="https://www.cypcs.org.uk/wpcypcs/wp-content/uploads/2022/10/thumbnail.png" width="80" height="80"/>
+                                <div class="ms-3">
+                                    <div class="font-weight-bold">BRANDI R</div>
+                                    <div class="text-warning">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card text-center p-3 bg-dark text-light">
+                            <p>
+                                "Family really enjoyed the pizza, burgers/fries, wings."
+                            </p>
+                            <div class="d-flex align-items-center justify-content-center">
+                                <img class="rounded-circle" alt="Portrait of Joe Terpstra" 
+                                     src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJDxacENqNeotruR6rehZ2Eiermj-sEcRqKg&s" width="80" height="80"/>
+                                <div class="ms-3">
+                                    <div class="font-weight-bold">JOE TERPSTRA</div>
+                                    <div class="text-warning">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card text-center p-3 bg-dark text-light">
+                            <p>
+                                "Tacos, sliders, philly sandwiches, fried shrimp."
+                            </p>
+                            <div class="d-flex align-items-center justify-content-center">
+                                <img class="rounded-circle" alt="Portrait of Julianne Greer" 
+                                     src="https://cdn.vectorstock.com/i/500p/21/23/avatar-photo-default-user-icon-person-image-vector-47852123.jpg" width="80" height="80"/>
+                                <div class="ms-3">
+                                    <div class="font-weight-bold">JULIANNE GREER</div>
+                                    <div class="text-warning">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Add more carousel items here if needed -->
+        </div>
+        <button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#testimonialCarousel" type="button">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#testimonialCarousel" type="button">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</div>
+
+
+
+    <!-- Footer Section -->
+<div id="Contact" class="container py-5">
+    <div class="row">
+        <div class="col-md-6">
+            <h4 class="text-warning" style="font-family: 'Brush Script MT', cursive;">Address</h4>
+            <h2 class="font-weight-bold">CONTACTS</h2>
+            <div class="mt-3" style="font-size: 18px;">
+                <p><i class="fas fa-map-marker-alt"></i> 4723 Thomas Drive, Panama City Beach, FL 32408</p>
+                <p><i class="fas fa-phone"></i> T / 850.233.8879</p>
+                <p><i class="fas fa-envelope"></i> teampatchespub@gmail.com</p>
+                <p><i class="fas fa-clock"></i> <strong>HOURS</strong></p>
+                <ul>
+                    <li>OPEN EVERYDAY</li>
+                    <li>11 AM - 12 AM (FRI & SAT)</li>
+                    <li>11 AM - 11 PM (SUN-THURS)</li>
+                </ul>
+            </div>
+            <div class="mt-4">
+                <i class="fab fa-facebook-f me-3 text-white" style="font-size: 24px;"></i>
+                <i class="fab fa-twitter me-3 text-white" style="font-size: 24px;"></i>
+                <i class="fab fa-instagram me-3 text-white" style="font-size: 24px;"></i>
+                <i class="fab fa-youtube text-white" style="font-size: 24px;"></i>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="map mt-3">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2924.673839073048!2d-82.4847436845311!3d42.9786357791506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88259b1b1b1b1b1b%3A0x1b1b1b1b1b1b1b1b!2s4723%20Thomas%20Drive%2C%20Panama%20City%20Beach%2C%20FL%2032408%2C%20USA!5e0!3m2!1sen!2s!4v1633024800000!5m2!1sen!2s" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </div>
+    <div class="text-center mt-5" style="font-size: 14px; color: #ccc;">
+        Copyright ©. All rights reserved. Terms of use and Privacy Policy.
+    </div>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
 </body>
-
 </html>
